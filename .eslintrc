@@ -1,0 +1,27 @@
+{
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:react/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "eqeqeq": "error",
+    "no-console": "warn",
+    "prettier/prettier": "error",
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-debugger": "warn",
+    "no-unused-vars": "warn"
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "ignorePatterns": ["node_modules", "build", "dist", "public"]
+}
